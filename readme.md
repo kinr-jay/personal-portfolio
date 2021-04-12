@@ -16,8 +16,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 3 - Sunday| Wireframes / Priority Matrix / Timeline | Incomplete
 |Day 4 - Monday| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 5 - Tuesday| MVP & Bug Fixes | Incomplete
-|Day 6 - Wednesday| Final Touches | Incomplete
-|Day 7 - Thursday|  | Incomplete
+|Day 6 - Wednesday| Post-MVP | Incomplete
+|Day 7 - Thursday| Final Touches | Incomplete
 |Day 8 - Friday| Present | Incomplete
 
 
@@ -35,7 +35,7 @@ Link To Site  | One Thing I'd Like To Incorporate |
 | ------------- | ------------- |
 | [mattfarley.ca](http://mattfarley.ca/) |  skills section, responsive behavior, general layout
 | [jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations
-| [dcfonts.com](https://www.dcfonts.com/)| scrolling banner to highlight projects
+| [dcfonts.com](https://www.dcfonts.com/)| auto-scrolling carousel to highlight projects
 
 ---
 
