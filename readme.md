@@ -12,8 +12,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1 - Friday| Project Description | Incomplete
-|Day 3 - Sunday| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 1 - Friday| Project Description | Complete
+|Day 3 - Sunday| Wireframes / Priority Matrix / Timeline | Complete
 |Day 4 - Monday| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 5 - Tuesday| MVP & Bug Fixes | Incomplete
 |Day 6 - Wednesday| Post-MVP | Incomplete
@@ -75,10 +75,10 @@ The main functional components of this website will be related to the rendering 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Skelton HTML | H | 1.5hr | hr |
+| Skelton HTML | H | 1.5hr | 1.5hr |
 | CSS Flex + Grid Design | H | 1.5hr | hr |
 | Render project info w/ jQuery | H | 1.5hr | hr |  
-| Basic Navbar | H | 2hr|  hr | 
+| Basic Navbar | H | 2hr|  1.5hr | 
 | General CSS Styling | H | 2hr | hr|
 | Responsive CSS Styling | H | 1.5hrs|  hr | 
 | Build Contact Form | M | 2hr | hr |
@@ -96,7 +96,9 @@ The main functional components of this website will be related to the rendering 
 | Total | H | 9.5hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+
+- Bootstrap 5.0: Bootstrap was used to develop the Navigation Bar
+- 
 
 ## Code Snippet
 

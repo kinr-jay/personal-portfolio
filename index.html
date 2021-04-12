@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
 
     <!-- jQuery -->
     <script
@@ -42,6 +42,90 @@
     <script src="js/app.js" defer></script>
   </head>
   <body>
-    <template-example></template-example>
+    <!-- Navbar, adapted from Bootstrap example -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar" aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="portfolioNavbar">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="container headline">
+      <div class="title">
+        <h1>Hey there, I'm Connor.<br>A full-stack web developer.</h1>
+      </div>
+      <div class="img-box">
+        <img src="https://res.cloudinary.com/kinr-jay/image/upload/v1618252778/GA/pt-12316_vntytu.png" alt="profile-picture" class="profile-picture">
+      </div>
+    </section>
+    <section class="about">
+        <h2>I write code...</h2>
+        <p>...but it amounts to much more. I've been an engineer my entire professional career. 
+          I started out in the medical device industry, working on life-saving coronary products like stents and balloon catheters. 
+          I love the problem solving nature of software engineering, and it offers me a way to build something new every day, while being
+          flexible enough to pursue other passions.</p>
+      <div class="calls-to-action">
+        <a href="" class="call first-call">View Projects</a>
+        <a href="" class="call second-call">Get in Touch</a>
+      </div>
+    </section>
+    <section class="skills">
+      <h2>Skills and Technologies</h2>
+      <div class="frontend">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>Javascript</li>
+          <li>jQuery</li>
+          <li>React</li>
+        </ul>
+      </div>
+      <div class="backend">
+        <h3>Backend</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      <div class="dev-tools">
+        <h3>Dev Tools</h3>
+        <ul>
+          <li>Codepen</li>
+          <li>GitHub</li>
+          <li>Netlify</li>
+          <li>Terminal</li>
+          <li>Vercel</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="deck">
+
+      </div>
+    </section>
+    <footer>
+      Connor Jacobs &copy; 2021
+    </footer>
   </body>
 </html>
