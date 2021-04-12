@@ -97,12 +97,35 @@ The main functional components of this website will be related to the rendering 
 
 ## Additional Libraries
 
-- Bootstrap 5.0: Bootstrap was used to develop the Navigation Bar
+- Bootstrap 5.0: used to develop the Navigation Bar
 - 
 
 ## Code Snippet
 
+While I didn't end up using it, it took me a while to figure this out: how to use passed attributes to dynamically label individual instances of a Javascript web component so that each could be styled individually within the web component constructor method.
 
+```js
+// Styling for using Background Image
+const style = `
+<style>
+    div[id="${this.getAttribute("id")}"] {
+        background-image: url(${this.getAttribute("image")});
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 100%;
+    }
+</style>
+`
+`
+...
+<div class="project" id="${this.getAttribute("id")}">
+...
+`
+```
 
 ## Issues and Resolutions
+
+At one point I got a CORS error Pinterest when trying to source an image through my Google Sheet. So I learned what the heck CORS means: Cross-Origin Resource Sharing. I didn't want to dig too deep into Pinterests' CORS policies, so I moved all my images over to Cloudinary. Strangely enough, then the Google Sheet itself was throwing CORS errors, but after reloading the application, things were in order. Unfortunately I did not think to capture the individual error messages.
+
 

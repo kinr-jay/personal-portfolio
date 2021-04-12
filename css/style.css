@@ -103,6 +103,17 @@
     text-align: center;
 }
 
+.deck {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+project-card {
+    grid-column: 1 / span 3;
+    /* grid-row: 1 / 2; */
+}
+
 /* Footer Styling */
 
 footer {
