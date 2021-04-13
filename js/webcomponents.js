@@ -39,17 +39,19 @@ class ProjectCard extends HTMLElement {
             width: 100%;
         }
 
-        .project-links {
-        }
-
         .project-links a {
             text-decoration: none;
             color: black;
-            background-color: #287be7;
+            background-color: #3E4B91;
             color: white;
             padding: .5em .75em;
             border-radius: .8em;
         }
+
+        .project-links a:hover {
+            background-color: #1e319e
+        }
+
     </style>
     `;
 

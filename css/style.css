@@ -1,3 +1,10 @@
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Prata&display=swap');
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+
 /* Navbar custom styling */
 
 .nav-link {
@@ -25,6 +32,10 @@
   text-align: center;
 }
 
+.title h1 {
+    font-weight: 600;
+}
+
 .profile-picture {
   border-radius: 100%;
   height: 300px;
@@ -35,7 +46,7 @@
 
 .about {
   align-items: center;
-  background-color: #287be7;
+  background-color: #3E4B91;
   color: white;
   display: flex;
   flex-direction: column;
@@ -60,8 +71,13 @@
   vertical-align: middle;
 }
 
+.call:hover {
+    background-color: #c53838;
+    color: white;
+}
+
 .second-call {
-  background-color: #287be7;
+  background-color: #3E4B91;
   border: 1px solid white;
 }
 
@@ -74,17 +90,18 @@
 
 .skill-lists {
   display: flex;
+  margin-top: 1em;
   flex-direction: column;
   text-align: center;
 }
 
 .skills i {
   color: #ff4f4f;
-  margin-bottom: 10px;
+  margin: .5em 0 .5em;
 }
 
 .skills h2 {
-  margin-bottom: 1em;
+  font-size: 3em;
   text-align: center;
 }
 
@@ -110,7 +127,9 @@
 }
 
 .projects h2 {
+  color: white;
   font-size: 4em;
+  font-weight: 600;
   margin-bottom: 0.5em;
   text-align: center;
 }
@@ -129,46 +148,65 @@ project-card {
 /* Contact Form Styling */
 
 .contact {
-  padding: 4em;
-  text-align: center;
-}
-
-.contact form {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 4em;
 }
 
-form div {
-  margin: 0 auto 10px;
+.contact form {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+form .contact-labels {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+form i {
+    color: #3E4B91;
 }
 
 input[type="submit"] {
   background-color: #ff4f4f;
   border: none;
-  color: white;
-  padding: 0.5em 0.75em;
   border-radius: 0.8em;
+  color: white;
+  margin-top: 10px;
+  padding: 0.5em 0.75em;
+}
+
+input[type="submit"]:hover {
+    background-color: #c53838;
 }
 
 /* Footer Styling */
 
 footer {
-  background-color: #287be7;
+  background-color: #3E4B91;
   color: white;
   padding: 1.5em;
   text-align: center;
 }
 
 footer a {
+  color: white;
+  display: inline-block;
+  margin: 5px 15px;
+  text-decoration: none;
+}
+
+footer a:hover {
     color: white;
-    display: inline-block;
-    margin: 5px 15px;
-    text-decoration: none;
 }
 
 footer p {
-    margin: 5px;
+  margin: 5px;
 }
 
 /* Response CSS for Tablet Devices */
