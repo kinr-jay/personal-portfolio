@@ -8,7 +8,6 @@ class ProjectCard extends HTMLElement {
   constructor() {
     super();
 
-
     // Styling for using Background Image
     // const style = `
     // <style>
@@ -28,16 +27,21 @@ class ProjectCard extends HTMLElement {
         project-card {
             background-color: rgba(255,255,255,1);
             border-radius: .5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             margin: 10px;
-        }
-        .project {
-            padding: 1em;
-            margin: 1em;
+            padding: 2em;
         }
         img {
+            margin-bottom: 1em;
             height: auto;
             width: 100%;
         }
+
+        .project-links {
+        }
+
         .project-links a {
             text-decoration: none;
             color: black;
@@ -47,18 +51,18 @@ class ProjectCard extends HTMLElement {
             border-radius: .8em;
         }
     </style>
-    `
+    `;
+
+    this.setAttribute("id", `${this.getAttribute("id")}`);
 
     this.innerHTML = `
       ${style}
-      <div class="project" id="${this.getAttribute("id")}">
-        <img src="${this.getAttribute("image")}" alt="project-image">
-        <h4>${this.getAttribute("name")}</h4>
-        <p>${this.getAttribute("description")}</p>
-        <div class="project-links">
-            <a href=${this.getAttribute("liveURL")}>Live App</a>
-            <a href=${this.getAttribute("gitURL")}>GitHub Repo</a>
-        </div>
+      <img src="${this.getAttribute("image")}" alt="project-image">
+      <h4>${this.getAttribute("name")}</h4>
+      <p>${this.getAttribute("description")}</p>
+      <div class="project-links">
+        <a href=${this.getAttribute("liveURL")}>Live App</a>
+        <a href=${this.getAttribute("gitURL")}>GitHub Repo</a>
       </div>
         `;
   }
