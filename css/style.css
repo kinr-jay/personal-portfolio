@@ -1,122 +1,193 @@
-
 /* Navbar custom styling */
 
 .nav-link {
-    color: rgba(255,255,255,.85) !important
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .navbar-brand {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .navbar-nav {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* Headline Section Styling */
 
 .headline {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-    margin: 3em 0 1em 0;
-    text-align: center;
+  margin: 3em 0 1em 0;
+  text-align: center;
 }
 
 .profile-picture {
-    border-radius: 100%;
-    height: 300px;
-    width: auto;
+  border-radius: 100%;
+  height: 300px;
+  width: auto;
 }
 
 /* About Section */
 
 .about {
-    align-items: center;
-    background-color: #287be7;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 2em 0 1em 0;
-    padding: 3em 5em;
-    text-align: center;
+  align-items: center;
+  background-color: #287be7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0 1em 0;
+  padding: 3em 5em;
+  text-align: center;
 }
 
 .about h2 {
-    margin-bottom: .75em;
+  margin-bottom: 0.75em;
 }
 
 .call {
-    background-color: #ff4f4f;
-    border-radius: .5em;
-    color: white;
-    display: inline-block;
-    margin: .75em 5px;
-    padding: .5em 1em;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
+  background-color: #ff4f4f;
+  border-radius: 0.5em;
+  color: white;
+  display: inline-block;
+  margin: 0.75em 5px;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
 .second-call {
-    background-color: #287be7;
-    border: 1px solid white;
+  background-color: #287be7;
+  border: 1px solid white;
 }
 
 /* Skills Section Styling */
 
 .skills {
-    display: grid;
-    justify-content: space-evenly;
-    padding: 4em 0;
-    width: 100%;
+  padding: 4em 0;
+  width: 100%;
+}
+
+.skill-lists {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills i {
+  color: #ff4f4f;
+  margin-bottom: 10px;
 }
 
 .skills h2 {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .skills ul {
-    padding: 0;
-    text-align: center;
+  padding: 0;
 }
 
 .skills li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.frontend h3, .backend h3, .dev-tools h3 {
-    text-align: center;
+.frontend h3,
+.backend h3,
+.dev-tools h3 {
+  text-align: center;
 }
 
 /* Project Section Styling */
 
 .projects {
-    background-color: #ff4f4f;
-    padding: 3em 1em;
+  background-color: #ff4f4f;
+  padding: 3em 1em;
 }
 
 .projects h2 {
-    text-align: center;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .deck {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
 }
 
 project-card {
-    grid-column: 1 / span 3;
-    /* grid-row: 1 / 2; */
+  grid-column: 1 / span 12;
+  /* grid-row: 1 / 2; */
+}
+
+/* Contact Form Styling */
+
+.contact {
+  padding: 4em;
+  text-align: center;
+}
+
+.contact form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin: 0 auto 10px;
+}
+
+input[type="submit"] {
+  background-color: #ff4f4f;
+  border: none;
+  color: white;
+  padding: 0.5em 0.75em;
+  border-radius: 0.8em;
 }
 
 /* Footer Styling */
 
 footer {
-    padding: .75em;
-    text-align: center;;
+  background-color: #287be7;
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+}
+
+footer a {
+    color: white;
+    display: inline-block;
+    margin: 5px 15px;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Response CSS for Tablet Devices */
+
+@media screen and (min-width: 768px) {
+  project-card {
+    grid-column: auto / span 6;
+  }
+
+  .skill-lists {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* Responsive CSS for Desktop Devices */
+
+@media screen and (min-width: 1024px) {
+  project-card {
+    grid-column: auto / span 4;
+  }
 }

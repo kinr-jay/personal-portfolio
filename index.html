@@ -26,6 +26,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/538f0e8470.js" crossorigin="anonymous"></script>
+
     <!-- SHOELACE WEB COMPONENT LIBRARY https://shoelace.style/-->
     <link
       rel="stylesheet"
@@ -88,18 +91,21 @@
     </section>
     <section class="skills">
       <h2>Skills and Technologies</h2>
-      <div class="frontend">
-        <h3>Frontend</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>Javascript</li>
-          <li>jQuery</li>
-          <li>React</li>
-        </ul>
-      </div>
+      <div class="skill-lists">
+        <div class="frontend">
+          <i class="fas fa-laptop-code fa-3x"></i>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>React</li>
+          </ul>
+        </div>
       <div class="backend">
+        <i class="fab fa-connectdevelop fa-3x"></i>
         <h3>Backend</h3>
         <ul>
           <li>Node.js</li>
@@ -107,23 +113,42 @@
         </ul>
       </div>
       <div class="dev-tools">
+        <i class="fas fa-terminal fa-3x"></i>
         <h3>Dev Tools</h3>
         <ul>
-          <li>Codepen</li>
-          <li>GitHub</li>
-          <li>Netlify</li>
-          <li>Terminal</li>
-          <li>Vercel</li>
           <li>VS Code</li>
+          <li>GitHub</li>
+          <li>Terminal</li>
+          <li>Codepen</li>
+          <li>Netlify</li>
+          <li>Vercel</li>
         </ul>
       </div>
+    </div>
     </section>
     <section class="projects">
       <h2>My Projects</h2>
       <div class="deck"></div>
     </section>
+    <section class="contact">
+      <h2>Say hello!</h2>
+      <p>Have any questions? Have a project idea? Want to talk baseball? You know what to do.</p>
+      <form action="">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="up here" required="required">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="down here" required="required">  
+        </div>
+        <input type="submit" name="submit">
+      </form>
+    </section>
     <footer>
-      Connor Jacobs &copy; 2021
+      <a href="https://github.com/kinr-jay"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.instagram.com/the_kinr/"><i class="fab fa-instagram fa-2x"></i></a>
+      <p>Connor Jacobs &copy; 2021</p>
     </footer>
   </body>
 </html>

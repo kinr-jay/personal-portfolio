@@ -25,6 +25,11 @@ class ProjectCard extends HTMLElement {
     // Styling for using <img>
     const style = `
     <style>
+        project-card {
+            background-color: rgba(255,255,255,1);
+            border-radius: .5em;
+            margin: 10px;
+        }
         .project {
             padding: 1em;
             margin: 1em;
