@@ -76,21 +76,21 @@ The main functional components of this website will be related to the rendering 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Skelton HTML | H | 1.5hr | 1.5hr |
-| CSS Flex + Grid Design | H | 1.5hr | hr |
-| Render project info w/ jQuery | H | 1.5hr | hr |  
+| CSS Flex + Grid Design | H | 1.5hr | 1hr |
+| Render project info w/ jQuery | H | 1.5hr | 1.5hr |  
 | Basic Navbar | H | 2hr|  1.5hr | 
-| General CSS Styling | H | 2hr | hr|
-| Responsive CSS Styling | H | 1.5hrs|  hr | 
-| Build Contact Form | M | 2hr | hr |
-| Build Footer | L | 1hr |  hr |
-| Total | H | 13hrs| hrs |
+| General CSS Styling | H | 2hr | 2.5hr|
+| Responsive CSS Styling | H | 1.5hrs|  .5hr | 
+| Build Contact Form | M | 2hr | 1hr |
+| Build Footer | L | 1hr |  .5hr |
+| Total | H | 13hrs| 10hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Carousel | L | 2hr | hr | hr |
 | Upgrade Navbar | L | 2hr | hr |
-| Mouseover effects | L | 2.5hr | hr |
+| Mouseover effects | L | 2.5hr | 4hr |
 | Separate page for About | M | 1.5hr | hr |
 | Separate page for Contact | M | 1.5hr | hr |
 | Total | H | 9.5hrs| hrs |

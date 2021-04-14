@@ -21,7 +21,7 @@ $.ajax(
 
     for (project of projects) {
       const card = $(
-        `<project-card id="${project.id}" name="${project.name}" liveURL="${project.liveURL}" gitURL="${project.gitURL}" image="${project.image}" description="${project.description}">`
+        `<project-card number="${project.id}" name="${project.name}" liveURL="${project.liveURL}" gitURL="${project.gitURL}" image="${project.image}" description="${project.description}">`
       );
       $(".deck").append(card)
     }
