@@ -14,8 +14,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1 - Friday| Project Description | Complete
 |Day 3 - Sunday| Wireframes / Priority Matrix / Timeline | Complete
-|Day 4 - Monday| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 5 - Tuesday| MVP & Bug Fixes | Incomplete
+|Day 4 - Monday| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 5 - Tuesday| MVP & Bug Fixes | Complete
 |Day 6 - Wednesday| Post-MVP | Incomplete
 |Day 7 - Thursday| Final Touches | Incomplete
 |Day 8 - Friday| Present | Incomplete
@@ -66,6 +66,7 @@ Link To Site  | One Thing I'd Like To Incorporate |
 
 - Build a carousel of top projects
 - Upgrade the Navbar
+- Add hover effects for project cards
 - Add additional pages for About and Contact
 
 ## Functional Components
@@ -123,6 +124,12 @@ const style = `
 ...
 `
 ```
+
+Dynamnic Date for the Copyright in the Footer
+```js
+    $("footer").append($("<p>").text(`Connor Jacobs \u00A9 ${new Date().getFullYear()}`))
+```
+
 
 ## Issues and Resolutions
 

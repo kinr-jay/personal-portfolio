@@ -8,20 +8,7 @@ class ProjectCard extends HTMLElement {
   constructor() {
     super();
 
-    // Styling for using Background Image
-    // const style = `
-    // <style>
-    //     div[id="${this.getAttribute("id")}"] {
-    //         background-image: url(${this.getAttribute("image")});
-    //         background-size: cover;
-    //         background-position: center;
-    //         height: 300px;
-    //         width: 100%;
-    //     }
-    // </style>
-    // `
-
-    // Styling for using <img>
+    // Styling for custom project-card HTML element
     const style = `
     <style>
         project-card {

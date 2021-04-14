@@ -25,5 +25,8 @@ $.ajax(
       );
       $(".deck").append(card)
     }
+
+    // Dynamic Copyright Text
+    $("footer").append($("<p>").text(`Connor Jacobs \u00A9 ${new Date().getFullYear()}`))
   })
   .catch((error) => console.error(error));
