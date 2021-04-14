@@ -169,6 +169,7 @@ project-card {
 
 .contact p {
     text-align: center;
+    margin: 0 0 10px;
 }
 
 form .contact-labels {
@@ -181,7 +182,7 @@ form i {
     color: #3E4B91;
 }
 
-input[type="submit"] {
+input[type="submit"], .contact a {
   background-color: #ff4f4f;
   border: none;
   border-radius: 0.8em;
@@ -198,6 +199,17 @@ input[type="email"] {
     text-align: right;
 }
 
+.contact a {
+    background-color: #3E4B91;
+    text-decoration: none;
+    margin: 0 0 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.contact a:hover {
+    background-color: #1e319e
+}
 /* Footer Styling */
 
 footer {
