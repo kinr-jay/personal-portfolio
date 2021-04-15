@@ -62,7 +62,8 @@ body {
 }
 
 .about p {
-    font-size: .9em;
+    font-size: 1em;
+    width: clamp(45ch, 50ch);
 }
 
 .call {
@@ -247,6 +248,10 @@ footer p {
 
   .about {
       padding: 2.5em 15%;
+  }
+
+  .about p {
+      font-size: 1.2em;
   }
 
   .skill-lists {

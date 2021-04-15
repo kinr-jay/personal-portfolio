@@ -30,14 +30,14 @@
     <script src="https://kit.fontawesome.com/538f0e8470.js" crossorigin="anonymous"></script>
 
     <!-- SHOELACE WEB COMPONENT LIBRARY https://shoelace.style/-->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.36/dist/themes/base.css"
     />
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.36/dist/shoelace.js"
-    ></script>
+    ></script> -->
 
     <!-- YOUR CUSTOM CODE -->
     <link rel="stylesheet" href="css/style.css" />
@@ -55,14 +55,14 @@
         <div class="collapse navbar-collapse justify-content-end" id="portfolioNavbar">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -76,7 +76,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <h2>I write code...</h2>
         <p>...but it amounts to much more. I've been an engineer my entire professional career. 
           I started out in the medical device industry, working on life-saving coronary products like stents and balloon catheters. 
@@ -89,7 +89,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Skills and Technologies</h2>
       <div class="skill-lists">
         <div class="frontend">
@@ -128,18 +128,18 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>My Projects</h2>
       <div class="deck"></div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Say hello!</h2>
       <p>Have any questions? Have a project idea? Want to talk baseball? You know what to do.</p>
       <a href="mailto:cjacob22@gmail.com">Send me an email.</a>
       <p>Want to hear from me about my adventures in coding? Sign up for my email list.</p>
-      <form action="">
+      <form name="email-list" method="POST" data-netlify="true">
         <input type="text" id="name" name="name" placeholder="            up here" required="required">
         <div class="contact-labels">
           <label for="name">Name <i class="fas fa-hand-point-up"></i></label>
