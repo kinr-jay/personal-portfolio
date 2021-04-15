@@ -46,7 +46,7 @@ body {
 /* About Section */
 
 .about {
-  align-items: center;
+  align-items: stretch;
   background-color: #3E4B91;
   color: white;
   display: flex;
@@ -63,7 +63,6 @@ body {
 
 .about p {
     font-size: 1em;
-    width: clamp(45ch, 50ch);
 }
 
 .call {
@@ -165,12 +164,17 @@ project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 250px;
 }
 
 .contact p {
     text-align: center;
-    margin: 0 0 10px;
+    margin: 0 0 15px;
+    width: clamp(30ch, 50%, 45ch);
+}
+
+.break {
+  display: none;
 }
 
 form .contact-labels {
@@ -184,6 +188,7 @@ form i {
 }
 
 input[type="submit"], .contact a {
+  align-self: center;
   background-color: #ff4f4f;
   border: none;
   border-radius: 0.8em;
@@ -198,13 +203,13 @@ input[type="submit"]:hover {
 
 input[type="email"] {
     text-align: right;
+    margin-bottom: 5px;
 }
 
 .contact a {
     background-color: #3E4B91;
     text-decoration: none;
-    margin: 0 0 30px;
-    width: 300px;
+    margin: 0 0 20px;
     text-align: center;
 }
 
@@ -258,6 +263,7 @@ footer p {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
 }
 
 /* Responsive CSS for Desktop Devices */
@@ -273,5 +279,9 @@ footer p {
 
   .about {
       padding: 2.75em 20%;
+  }
+
+  .break {
+    display: inline;
   }
 }
