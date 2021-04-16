@@ -16,8 +16,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 3 - Sunday| Wireframes / Priority Matrix / Timeline | Complete
 |Day 4 - Monday| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 5 - Tuesday| MVP & Bug Fixes | Complete
-|Day 6 - Wednesday| Post-MVP | Incomplete
-|Day 7 - Thursday| Final Touches | Incomplete
+|Day 6 - Wednesday| Post-MVP | Complete
+|Day 7 - Thursday| Final Touches | Complete
 |Day 8 - Friday| Present | Incomplete
 
 
@@ -89,17 +89,18 @@ The main functional components of this website will be related to the rendering 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Carousel | L | 2hr | hr | hr |
-| Upgrade Navbar | L | 2hr | hr |
+| Carousel | L | 2hr | n/a hr |
+| Upgrade Navbar | L | 2hr | .5hr |
 | Mouseover effects | L | 2.5hr | 4hr |
-| Separate page for About | M | 1.5hr | hr |
-| Separate page for Contact | M | 1.5hr | hr |
-| Total | H | 9.5hrs| hrs |
+| Separate page for About | M | 1.5hr | n/ahr |
+| Separate page for Contact | M | 1.5hr | n/ahr |
+| Implement contact form functionality | 1hr | .5hr |
+| Upgrade responsive styling | M | 2hr | 2hr |
+| Total | H | 9.5hrs| 7hrs |
 
 ## Additional Libraries
 
 - Bootstrap 5.0: used to develop the Navigation Bar
-- 
 
 ## Code Snippet
 

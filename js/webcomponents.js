@@ -15,6 +15,7 @@ class ProjectCard extends HTMLElement {
             background-color: white;
             margin: 10px;
             position: relative;
+            border-radius: 1em;
         }
 
         img {
@@ -22,48 +23,17 @@ class ProjectCard extends HTMLElement {
             height: auto;
             width: 100%;
             transition: all .5s;
+            border-radius: 1em 1em 0 0;
         }
 
         figcaption {
-            opacity: 0;
-            padding: 30px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            transition: all 0.5s;
-        }
-
-        figcaption h4 {
-            padding: 10% 0;
-            margin: 0;
-            width: 100%;
+            padding: 10px;
             text-align: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        figcaption p {
-            margin: 0;
-            padding: 5% 10%;
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            right: 0;
         }
 
         .project-links {
-            opacity: 0;
-            position: absolute;
+            padding: 0 0 20px;
             text-align: center;
-            width: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transition: all .5s;
         }
 
         .project-links a {
@@ -75,23 +45,75 @@ class ProjectCard extends HTMLElement {
             text-decoration: none;
         }
 
-        ////// Hover effects
+        @media screen and (min-width: 1024px) {
+            project-card {
+                border-radius: 0;
+            }
 
-        .project-links a:hover {
-            background-color: #1e319e
+            .project-details {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+
+            img {
+                border-radius: 0;
+            }
+
+            figcaption {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                transition: all 0.5s;
+                flex-grow: 1;
+                padding: 5%;
+            }
+
+            figcaption h4 {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+    
+            figcaption p {
+                padding: 0;
+                width: 100%;
+                text-align: center;
+            }
+    
+            .project-links {
+                opacity: 0;
+                width: 100%;
+                transition: all .5s;
+            }
+    
+            ////// Hover effects
+    
+            .project-links a:hover {
+                background-color: #1e319e
+            }
+    
+            project-card:hover figcaption {
+                opacity: 1;
+            }
+    
+            project-card:hover img {
+                opacity: .2;
+            }
+    
+            project-card:hover .project-links {
+                opacity: 1;
+            }
         }
 
-        project-card:hover figcaption {
-            opacity: 1;
-        }
-
-        project-card:hover img {
-            opacity: .2;
-        }
-
-        project-card:hover .project-links {
-            opacity: 1;
-        }
+        
 
     </style>
     `;
@@ -102,13 +124,15 @@ class ProjectCard extends HTMLElement {
     this.innerHTML = `
       ${style}
       <img src="${this.getAttribute("image")}" alt="project-image">
-      <figcaption id="${this.getAttribute("number")}">
-        <h4>${this.getAttribute("name")}</h4>
-        <p>${this.getAttribute("description")}</p>
-      </figcaption>
-      <div class="project-links">
-        <a href=${this.getAttribute("liveURL")}>Live App</a>
-        <a href=${this.getAttribute("gitURL")}>GitHub Repo</a>
+      <div class="project-details">
+        <figcaption id="${this.getAttribute("number")}">
+          <h4>${this.getAttribute("name")}</h4>
+          <p>${this.getAttribute("description")}</p>
+        </figcaption>
+        <div class="project-links">
+          <a href=${this.getAttribute("liveURL")}>Live App</a>
+          <a href=${this.getAttribute("gitURL")}>GitHub Repo</a>
+        </div>
       </div>
         `;
   }
