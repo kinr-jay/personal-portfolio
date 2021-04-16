@@ -32,6 +32,11 @@ body {
   width: 100%;
 }
 
+.headline img {
+  height: auto;
+  width: 100%;
+}
+
 .title {
   position: absolute;
   top: 4%;

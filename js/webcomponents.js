@@ -18,7 +18,7 @@ class ProjectCard extends HTMLElement {
             border-radius: 1em;
         }
 
-        img {
+        project-card img {
             opacity: 1;
             height: auto;
             width: 100%;
@@ -59,7 +59,7 @@ class ProjectCard extends HTMLElement {
                 height: 100%;
             }
 
-            img {
+            project-card img {
                 border-radius: 0;
             }
 
