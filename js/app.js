@@ -1,5 +1,8 @@
+// Ajax call
+const apiKey = "AIzaSyBqHAi91PdvmMVdaStfqh-yrk6SZ8AIFkk"
+
 $.ajax(
-  "https://spreadsheets.google.com/feeds/list/1zFakTubjCSGQGx_-CoiBPoo3KNy9gMjIZ1mugdTxSD0/1/public/full?alt=json"
+  `https://sheets.googleapis.com/v4/spreadsheets/1zFakTubjCSGQGx/values/Sheet1?alt=json&key=${apiKey}`
 )
   .then((data) => {
     // map over data to create simpler dataset
