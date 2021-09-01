@@ -2,21 +2,24 @@
 const apiKey = "AIzaSyBqHAi91PdvmMVdaStfqh-yrk6SZ8AIFkk"
 
 $.ajax(
-  `https://sheets.googleapis.com/v4/spreadsheets/1zFakTubjCSGQGx/values/Sheet1?alt=json&key=${apiKey}`
+  `https://sheets.googleapis.com/v4/spreadsheets/1zFakTubjCSGQGx_-CoiBPoo3KNy9gMjIZ1mugdTxSD0/values/Sheet1?alt=json&key=${apiKey}`
 )
   .then((data) => {
     // map over data to create simpler dataset
 
-    const projects = data.feed.entry.map((project) => {
+    const projects = data.values.map((project) => {
       return {
-        id: project.gsx$id.$t,
-        name: project.gsx$project.$t,
-        liveURL: project.gsx$liveurl.$t,
-        gitURL: project.gsx$giturl.$t,
-        image: project.gsx$image.$t,
-        description: project.gsx$description.$t,
+        id: project[0],
+        name: project[1],
+        liveURL: project[2],
+        gitURL: project[3],
+        image: project[4],
+        description: project[5],
       };
     });
+  
+    // Remove first item in projects array that stores google spreadsheet column titles
+    projects.shift()
 
     /////////////////////////////
     // jQuery to render projects
